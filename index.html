@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Especial</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <h2>Calculadora Precios Enero 2024</h2>
+    <h3>Obra gris</h3>
+    <!-- Campos para obra gris -->
+    <div class="entradas" id="obragris">
+        
+
+        <label for="cubiertoObraGris">m² Cubierto (Obra Gris):</label>
+        <input type="number" id="cubiertoObraGris" />
+
+        <label for="pergolaObraGris">m² Pérgola (Obra Gris):</label>
+        <input type="number" id="pergolaObraGris" />
+
+        <label for="galeriaObraGris">m² Galería (Obra Gris):</label>
+        <input type="number" id="galeriaObraGris" />
+    </div>
+    <!-- Botones para obra gris -->
+    <div class="botones">
+        <button onclick="calcularObraGris()">Calcular Obra Gris</button>
+        <button onclick="calcularEnDolaresObraGris()">Calcular en Dólares (Obra Gris)</button>
+        <button class="borrar" onclick="borrarCampos('obragris')">Borrar Campos</button>
+
+    </div>
+    <h3>Obra gris llave en mano</h3>
+    <div class="entradas" id="grisllave">
+        
+        <label for="cubiertoObraGrisLlaveEnMano">m² Cubierto (Obra Gris Llave en Mano):</label>
+        <input type="number" id="cubiertoObraGrisLlaveEnMano" />
+
+        <label for="pergolaObraGrisLlaveEnMano">m² Pérgola (Obra Gris Llave en Mano):</label>
+        <input type="number" id="pergolaObraGrisLlaveEnMano" />
+
+        <label for="galeriaObraGrisLlaveEnMano">m² Galería (Obra Gris Llave en Mano):</label>
+        <input type="number" id="galeriaObraGrisLlaveEnMano" />
+    </div>
+        <!-- Botones para obra gris llave en mano -->
+        <div class="botones">
+            <button onclick="calcularObraGrisLlaveEnMano()">Calcular Obra Gris Llave en Mano</button>
+            <button onclick="calcularEnDolaresObraGrisLlaveEnMano()">Calcular en Dólares (Obra Gris Llave en Mano)</button>
+            <button class="borrar" onclick="borrarCampos('grisllave')">Borrar Campos</button>
+
+        </div>
+
+  
+
+    <!-- Campos para premium base -->
+    <h3>Premium base</h3>
+    <div class="entradas" id="premium">
+        
+
+        <label for="cubiertoPremiumBase">m² Cubierto (Premium Base):</label>
+        <input type="number" id="cubiertoPremiumBase" />
+
+        <label for="pergolaPremiumBase">m² Pérgola (Premium Base):</label>
+        <input type="number" id="pergolaPremiumBase" />
+
+        <label for="galeriaPremiumBase">m² Galería (Premium Base):</label>
+        <input type="number" id="galeriaPremiumBase" />
+    </div>
+    <!-- Botones para premium base -->
+    <div class="botones">
+        <button onclick="calcularPremiumBase()">Calcular Premium Base</button>
+        <button onclick="calcularEnDolaresPremiumBase()">Calcular en Dólares (Premium Base)</button>
+        <button class="borrar" onclick="borrarCampos('premium')">Borrar Campos</button>
+
+    </div>
+
+    <!-- Campos para premium llave en mano -->
+    <h3>Premium LLave en mano</h3>
+    <div class="entradas" id="premiumllave">
+        
+        <label for="cubiertoPremiumLlaveEnMano">m² Cubierto (Premium Llave en Mano):</label>
+        <input type="number" id="cubiertoPremiumLlaveEnMano" />
+
+        <label for="pergolaPremiumLlaveEnMano">m² Pérgola (Premium Llave en Mano):</label>
+        <input type="number" id="pergolaPremiumLlaveEnMano" />
+
+        <label for="galeriaPremiumLlaveEnMano">m² Galería (Premium Llave en Mano):</label>
+        <input type="number" id="galeriaPremiumLlaveEnMano" />
+    </div>
+    <div class="botones">
+        <!-- Botones para premium llave en mano -->
+        <button onclick="calcularPremiumLlaveEnMano()">Calcular Premium Llave en Mano</button>
+        <button onclick="calcularEnDolaresPremiumLlaveEnMano()">Calcular en Dólares (Premium Llave en Mano)</button>
+        <button class="borrar" onclick="borrarCampos('premiumllave')">Borrar Campos</button>
+
+    </div>
+
+      <!-- Popup -->
+      <div id="popup" class="popup">
+        <div id="popupContent"></div>
+        <button onclick="cerrarPopup()">Cerrar</button>
+      </div>
+
+    <script src="calculadora.js"> </script>
+</body>
+
+</html>
