@@ -96,6 +96,47 @@
         <button class="borrar" onclick="borrarCampos('premiumllave')">Borrar Campos</button>
 
     </div>
+    <h3>Duplex Obra Gris</h3>
+    <div class="entradas" id="duplex">
+        
+
+        <label for="cubiertoDuplex">m² Cubierto (Duplex Obra Gris):</label>
+        <input type="number" id="cubiertoDuplex" />
+
+        <label for="pergolaDuplex">m² Pérgola (Duplex Obra Gris):</label>
+        <input type="number" id="pergolaDuplex" />
+
+        <label for="galeriaDuplex">m² Galería (Duplex Obra Gris):</label>
+        <input type="number" id="galeriaDuplex" />
+    </div>
+    <!-- Botones para premium base -->
+    <div class="botones">
+        <button onclick="calcularDuplex()">Calcular Duplex Obra Gris</button>
+        <button onclick="calcularEnDolaresDuplex()">Calcular en Dólares (Duplex Obra Gris)</button>
+        <button class="borrar" onclick="borrarCampos('duplex')">Borrar Campos</button>
+
+    </div>
+
+    <!-- Campos para premium llave en mano -->
+    <h3>Duplex LLave en mano</h3>
+    <div class="entradas" id="duplexllave">
+        
+        <label for="cubiertoDuplexLlaveEnMano">m² Cubierto (Duplex Llave en Mano):</label>
+        <input type="number" id="cubiertoDuplexLlaveEnMano" />
+
+        <label for="pergolaDuplexLlaveEnMano">m² Pérgola (Duplex Llave en Mano):</label>
+        <input type="number" id="pergolaDuplexLlaveEnMano" />
+
+        <label for="galeriaDuplexLlaveEnMano">m² Galería (Duplex Llave en Mano):</label>
+        <input type="number" id="galeriaDuplexLlaveEnMano" />
+    </div>
+    <div class="botones">
+        <!-- Botones para premium llave en mano -->
+        <button onclick="calcularDuplexLlaveEnMano()">Calcular Duplex Llave en Mano</button>
+        <button onclick="calcularEnDolaresDuplexLlaveEnMano()">Calcular en Dólares (Duplex Llave en Mano)</button>
+        <button class="borrar" onclick="borrarCampos('duplexllave')">Borrar Campos</button>
+
+    </div>
 
       <!-- Popup -->
       <div id="popup" class="popup">
