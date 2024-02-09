@@ -64,8 +64,8 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
+  background-color: #84e7f0;
+  padding: 18px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -77,12 +77,16 @@ button:hover {
 }
 
 .popup p {
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: 700;
   /* Ajusta el tamaño del texto según tus preferencias */
 }
-
+#popupContent{
+  font-size: 30px;
+  font-weight: 500;
+}
 .popup button {
-  padding: 10px 20px;
+  padding: 8px 12px;
   font-size: 16px;
   cursor: pointer;
   border: none;
