@@ -6,7 +6,7 @@ function calcularObraGris() {
     var pergola = parseFloat(document.getElementById("pergolaObraGris").value) || 0;
     var galeria = parseFloat(document.getElementById("galeriaObraGris").value) || 0;
 
-    var resultado = (cubierto * 231000 + pergola * 88000 + galeria * 168000);
+    var resultado = (cubierto * 254100 + pergola * 100000 + galeria * 184800);
 
     mostrarResultado(resultado);
   }
@@ -15,7 +15,7 @@ function calcularObraGris() {
     var pergola = parseFloat(document.getElementById("pergolaObraGrisLlaveEnMano").value) || 0;
     var galeria = parseFloat(document.getElementById("galeriaObraGrisLlaveEnMano").value) || 0;
   
-    var resultado = (cubierto * 390000 + pergola * 165000 + galeria * 273000);
+    var resultado = (cubierto * 429000 + pergola * 181500 + galeria * 300300);
   
     mostrarResultado(resultado);
   }
@@ -45,7 +45,7 @@ function calcularObraGris() {
     var pergola = parseFloat(document.getElementById("pergolaPremiumBase").value) || 0;
     var galeria = parseFloat(document.getElementById("galeriaPremiumBase").value) || 0;
 
-    var resultado = (cubierto * 280000 + pergola * 88000 + galeria * 168000) ;
+    var resultado = (cubierto * 308000 + pergola * 100000 + galeria * 184800) ;
 
     mostrarResultado(resultado);
   }
@@ -65,7 +65,7 @@ function calcularObraGris() {
     var pergola = parseFloat(document.getElementById("pergolaPremiumLlaveEnMano").value) || 0;
     var galeria = parseFloat(document.getElementById("galeriaPremiumLlaveEnMano").value) || 0;
 
-    var resultado = (cubierto * 460000 + pergola * 165000 + galeria * 273000);
+    var resultado = (cubierto * 506000 + pergola * 181500 + galeria * 300300);
 
     mostrarResultado(resultado);
   }
@@ -88,7 +88,7 @@ function calcularObraGris() {
     var pergola = parseFloat(document.getElementById("pergolaDuplex").value) || 0;
     var galeria = parseFloat(document.getElementById("galeriaDuplex").value) || 0;
 
-    var resultado = (cubierto * 280000 + pergola * 88000 + galeria * 168000) ;
+    var resultado = (cubierto * 308000 + pergola * 100000 + galeria * 184800) ;
 
     mostrarResultado(resultado);
   }
@@ -97,7 +97,7 @@ function calcularObraGris() {
     var pergola = parseFloat(document.getElementById("pergolaDuplexLlaveEnMano").value) || 0;
     var galeria = parseFloat(document.getElementById("galeriaDuplexLlaveEnMano").value) || 0;
 
-    var resultado = (cubierto * 500000 + pergola * 165000 + galeria * 273000) ;
+    var resultado = (cubierto * 550000 + pergola * 181500 + galeria * 300300) ;
 
     mostrarResultado(resultado);
   }
