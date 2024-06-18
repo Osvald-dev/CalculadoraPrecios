@@ -1,160 +1,132 @@
-// const dolar = 1200
-// const flete = 800000
-//OBRA GRIS LINEA STANDARD
+// Funciones de cálculo para cada tipo
 function calcularObraGris() {
-    var cubierto = parseFloat(document.getElementById("cubiertoObraGris").value) || 0;
-    var pergola = parseFloat(document.getElementById("pergolaObraGris").value) || 0;
-    var galeria = parseFloat(document.getElementById("galeriaObraGris").value) || 0;
+  var cubierto = parseFloat(document.getElementById("cubiertoObraGris").value) || 0;
+  var pergola = parseFloat(document.getElementById("pergolaObraGris").value) || 0;
+  var galeria = parseFloat(document.getElementById("galeriaObraGris").value) || 0;
 
-    var resultado = (cubierto * 254100 + pergola * 100000 + galeria * 184800);
+  var resultado = cubierto * 254100 + pergola * 100000 + galeria * 184800;
 
-    mostrarResultado(resultado);
-  }
-  function calcularObraGrisLlaveEnMano() {
-    var cubierto = parseFloat(document.getElementById("cubiertoObraGrisLlaveEnMano").value) || 0;
-    var pergola = parseFloat(document.getElementById("pergolaObraGrisLlaveEnMano").value) || 0;
-    var galeria = parseFloat(document.getElementById("galeriaObraGrisLlaveEnMano").value) || 0;
-  
-    var resultado = (cubierto * 429000 + pergola * 181500 + galeria * 300300);
-  
-    mostrarResultado(resultado);
-  }
-  
+  mostrarResultado(resultado);
+}
 
-  // function calcularEnDolaresObraGris() {
-  //   var cubierto = parseFloat(document.getElementById("cubiertoObraGris").value) || 0;
-  //   var pergola = parseFloat(document.getElementById("pergolaObraGris").value) || 0;
-  //   var galeria = parseFloat(document.getElementById("galeriaObraGris").value) || 0;
+function calcularObraGrisLlaveEnMano() {
+  var cubierto = parseFloat(document.getElementById("cubiertoObraGrisLlaveEnMano").value) || 0;
+  var pergola = parseFloat(document.getElementById("pergolaObraGrisLlaveEnMano").value) || 0;
+  var galeria = parseFloat(document.getElementById("galeriaObraGrisLlaveEnMano").value) || 0;
 
-  //   var resultado = (cubierto * 220 + pergola * 143 + galeria * 167.2) + 750;
+  var resultado = cubierto * 429000 + pergola * 181500 + galeria * 300300;
 
-  //   mostrarResultado(resultado);
-  // }
-  // function calcularEnDolaresObraGrisLlaveEnMano() {
-  //   var cubierto = parseFloat(document.getElementById("cubiertoObraGrisLlaveEnMano").value) || 0;
-  //   var pergola = parseFloat(document.getElementById("pergolaObraGrisLlaveEnMano").value) || 0;
-  //   var galeria = parseFloat(document.getElementById("galeriaObraGrisLlaveEnMano").value) || 0;
-  
-  //   var resultado = (cubierto * 484 + pergola * 275 + galeria * 363) + 750;
-  
-  //   mostrarResultado(resultado);
-  // }
-//PREMIUM 
-  function calcularPremiumBase() {
-    var cubierto = parseFloat(document.getElementById("cubiertoPremiumBase").value) || 0;
-    var pergola = parseFloat(document.getElementById("pergolaPremiumBase").value) || 0;
-    var galeria = parseFloat(document.getElementById("galeriaPremiumBase").value) || 0;
+  mostrarResultado(resultado);
+}
 
-    var resultado = (cubierto * 308000 + pergola * 100000 + galeria * 184800) ;
+function calcularPremiumBase() {
+  var cubierto = parseFloat(document.getElementById("cubiertoPremiumBase").value) || 0;
+  var pergola = parseFloat(document.getElementById("pergolaPremiumBase").value) || 0;
+  var galeria = parseFloat(document.getElementById("galeriaPremiumBase").value) || 0;
 
-    mostrarResultado(resultado);
-  }
+  var resultado = cubierto * 308000 + pergola * 100000 + galeria * 184800;
 
-  // function calcularEnDolaresPremiumBase() {
-  //   var cubierto = parseFloat(document.getElementById("cubiertoPremiumBase").value) || 0;
-  //   var pergola = parseFloat(document.getElementById("pergolaPremiumBase").value) || 0;
-  //   var galeria = parseFloat(document.getElementById("galeriaPremiumBase").value) || 0;
+  mostrarResultado(resultado);
+}
 
-  //   var resultado = (cubierto * 315 + pergola * 143 + galeria * 167.2) + 750;
+function calcularPremiumLlaveEnMano() {
+  var cubierto = parseFloat(document.getElementById("cubiertoPremiumLlaveEnMano").value) || 0;
+  var pergola = parseFloat(document.getElementById("pergolaPremiumLlaveEnMano").value) || 0;
+  var galeria = parseFloat(document.getElementById("galeriaPremiumLlaveEnMano").value) || 0;
 
-  //   mostrarResultado(resultado);
-  // }
+  var resultado = cubierto * 506000 + pergola * 181500 + galeria * 300300;
 
-  function calcularPremiumLlaveEnMano() {
-    var cubierto = parseFloat(document.getElementById("cubiertoPremiumLlaveEnMano").value) || 0;
-    var pergola = parseFloat(document.getElementById("pergolaPremiumLlaveEnMano").value) || 0;
-    var galeria = parseFloat(document.getElementById("galeriaPremiumLlaveEnMano").value) || 0;
+  mostrarResultado(resultado);
+}
 
-    var resultado = (cubierto * 506000 + pergola * 181500 + galeria * 300300);
+function calcularDuplex() {
+  var cubierto = parseFloat(document.getElementById("cubiertoDuplex").value) || 0;
+  var pergola = parseFloat(document.getElementById("pergolaDuplex").value) || 0;
+  var galeria = parseFloat(document.getElementById("galeriaDuplex").value) || 0;
 
-    mostrarResultado(resultado);
-  }
+  var resultado = cubierto * 308000 + pergola * 100000 + galeria * 184800;
 
-  // function calcularEnDolaresPremiumLlaveEnMano() {
-  //   var cubierto = parseFloat(document.getElementById("cubiertoPremiumLlaveEnMano").value) || 0;
-  //   var pergola = parseFloat(document.getElementById("pergolaPremiumLlaveEnMano").value) || 0;
-  //   var galeria = parseFloat(document.getElementById("galeriaPremiumLlaveEnMano").value) || 0;
+  mostrarResultado(resultado);
+}
 
-  //   var resultado = (cubierto * 605 + pergola * 275 + galeria * 363) + 750;
+function calcularDuplexLlaveEnMano() {
+  var cubierto = parseFloat(document.getElementById("cubiertoDuplexLlaveEnMano").value) || 0;
+  var pergola = parseFloat(document.getElementById("pergolaDuplexLlaveEnMano").value) || 0;
+  var galeria = parseFloat(document.getElementById("galeriaDuplexLlaveEnMano").value) || 0;
 
-  //   mostrarResultado(resultado);
-  // }
+  var resultado = cubierto * 550000 + pergola * 181500 + galeria * 300300;
 
+  mostrarResultado(resultado);
+}
 
+// Función para calcular con ECAP
+function calcularConECAP(tipo) {
+  var cubierto = parseFloat(document.getElementById("cubierto" + tipo).value) || 0;
+  var pergola = parseFloat(document.getElementById("pergola" + tipo).value) || 0;
+  var galeria = parseFloat(document.getElementById("galeria" + tipo).value) || 0;
 
-  //DUPLEX
-  function calcularDuplex() {
-    var cubierto = parseFloat(document.getElementById("cubiertoDuplex").value) || 0;
-    var pergola = parseFloat(document.getElementById("pergolaDuplex").value) || 0;
-    var galeria = parseFloat(document.getElementById("galeriaDuplex").value) || 0;
+  var precioCubierto;
+  var precioPergola = pergola * 100000;
+  var precioGaleria = galeria * 184800;
 
-    var resultado = (cubierto * 308000 + pergola * 100000 + galeria * 184800) ;
-
-    mostrarResultado(resultado);
-  }
-  function calcularDuplexLlaveEnMano() {
-    var cubierto = parseFloat(document.getElementById("cubiertoDuplexLlaveEnMano").value) || 0;
-    var pergola = parseFloat(document.getElementById("pergolaDuplexLlaveEnMano").value) || 0;
-    var galeria = parseFloat(document.getElementById("galeriaDuplexLlaveEnMano").value) || 0;
-
-    var resultado = (cubierto * 550000 + pergola * 181500 + galeria * 300300) ;
-
-    mostrarResultado(resultado);
+  switch(tipo) {
+      case 'ObraGris':
+          precioCubierto = cubierto * 254100;
+          break;
+      case 'ObraGrisLlaveEnMano':
+          precioCubierto = cubierto * 429000;
+          break;
+      case 'PremiumBase':
+          precioCubierto = cubierto * 308000;
+          break;
+      case 'PremiumLlaveEnMano':
+          precioCubierto = cubierto * 506000;
+          break;
+      case 'Duplex':
+          precioCubierto = cubierto * 308000;
+          break;
+      case 'DuplexLlaveEnMano':
+          precioCubierto = cubierto * 550000;
+          break;
+      default:
+          precioCubierto = 0;
   }
 
-  // function calcularEnDolaresDuplexLlaveEnMano() {
-  //   var cubierto = parseFloat(document.getElementById("cubiertoDuplexLlaveEnMano").value) || 0;
-  //   var pergola = parseFloat(document.getElementById("pergolaDuplexLlaveEnMano").value) || 0;
-  //   var galeria = parseFloat(document.getElementById("galeriaDuplexLlaveEnMano").value) || 0;
+  var sumaECAP = cubierto * 50000;
+  var resultado = precioCubierto + sumaECAP + precioPergola + precioGaleria;
 
-  //   var resultado = (cubierto * 854 + pergola * 275 + galeria * 363) + 750;
+  mostrarResultado(resultado);
+}
 
-  //   mostrarResultado(resultado);
-  // }
-  // function calcularEnDolaresDuplex() {
-  //   var cubierto = parseFloat(document.getElementById("cubiertoDuplex").value) || 0;
-  //   var pergola = parseFloat(document.getElementById("pergolaDuplex").value) || 0;
-  //   var galeria = parseFloat(document.getElementById("galeriaDuplex").value) || 0;
+// Función para mostrar el resultado en el popup
+function mostrarResultado(resultado) {
+  var popup = document.getElementById("popup");
+  var popupContent = document.getElementById("popupContent");
 
-  //   var resultado = (cubierto * 400 + pergola * 143 + galeria * 167.2) + 750;
+  var resultadoFormateado = resultado.toLocaleString('es-ES');
 
-  //   mostrarResultado(resultado);
-  // }
-  //RESULTADO
+  popupContent.innerHTML = "Resultado: $" + resultadoFormateado;
 
-  function mostrarResultado(resultado) {
-    var popup = document.getElementById("popup");
-    var popupContent = document.getElementById("popupContent");
-  
-    // Formatear resultado con puntos como separadores de miles
-    var resultadoFormateado = resultado.toLocaleString('es-ES');
-  
-    // Mostrar resultado formateado en el popup
-    popupContent.innerHTML = "Resultado: $" + resultadoFormateado;
-  
-    // Mostrar el popup
-    popup.classList.add("show");
-  }
-  
-  function cerrarPopup() {
-    var popup = document.getElementById("popup");
-  
-    // Ocultar el popup
-    popup.classList.remove("show");
-  }
+  popup.classList.add("show");
+}
 
-  function borrarCampos(contenedorId) {
-    // Obtener el contenedor específico
-    var contenedor = document.getElementById(contenedorId);
-  
-    // Recorrer todos los elementos dentro del contenedor y borrar los campos de entrada
-    var camposEntrada = contenedor.querySelectorAll('input[type="number"]');
-    camposEntrada.forEach(function (campo) {
+// Función para cerrar el popup
+function cerrarPopup() {
+  var popup = document.getElementById("popup");
+
+  popup.classList.remove("show");
+}
+
+// Función para borrar los campos de entrada
+function borrarCampos(contenedorId) {
+  var contenedor = document.getElementById(contenedorId);
+
+  var camposEntrada = contenedor.querySelectorAll('input[type="number"]');
+  camposEntrada.forEach(function (campo) {
       campo.value = "";
-    });
-  
-    // Ocultar el resultado y el popup
-    document.getElementById("resultado").innerHTML = "";
-    var popup = document.getElementById("popup");
-    popup.classList.remove("show");
-  }
+  });
+
+  document.getElementById("resultado").innerHTML = "";
+  var popup = document.getElementById("popup");
+  popup.classList.remove("show");
+}

@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -28,9 +27,9 @@
         <!-- Botones para obra gris -->
         <div class="botones">
             <button onclick="calcularObraGris()">Calcular STANDARD</button>
+            <button onclick="calcularConECAP('ObraGris')">Calcular con ECAP</button>
             <!-- <button onclick="calcularEnDolaresObraGris()">Calcular en Dólares (Obra Gris)</button> -->
             <button class="borrar" onclick="borrarCampos('obragris')">Borrar Campos</button>
-
         </div>
     </div>
     <div class="divisores">
@@ -46,12 +45,12 @@
         <!-- Botones para obra gris llave en mano -->
         <div class="botones">
             <button onclick="calcularObraGrisLlaveEnMano()">Calcular Llave en Mano STANDARD</button>
+            <button onclick="calcularConECAP('ObraGrisLlaveEnMano')">Calcular con ECAP</button>
             <!-- <button onclick="calcularEnDolaresObraGrisLlaveEnMano()">Calcular en Dólares (Obra Gris Llave en Mano)</button> -->
             <button class="borrar" onclick="borrarCampos('grisllave')">Borrar Campos</button>
         </div>
     </div>
     <div class="divisores">
-        <!-- Campos para premium base -->
         <h3>OBRA GRIS PREMIUM</h3>
         <div class="entradas" id="premium">
             <label for="cubiertoPremiumBase">m² Cubierto:</label>
@@ -64,6 +63,7 @@
         <!-- Botones para premium base -->
         <div class="botones">
             <button onclick="calcularPremiumBase()">Calcular OBRA GRIS PREMIUM</button>
+            <button onclick="calcularConECAP('PremiumBase')">Calcular con ECAP</button>
             <!-- <button onclick="calcularEnDolaresPremiumBase()">Calcular en Dólares (Premium Base)</button> -->
             <button class="borrar" onclick="borrarCampos('premium')">Borrar Campos</button>
         </div>
@@ -82,56 +82,46 @@
         <div class="botones">
             <!-- Botones para premium llave en mano -->
             <button onclick="calcularPremiumLlaveEnMano()">Calcular Premium Llave en Mano</button>
+            <button onclick="calcularConECAP('PremiumLlaveEnMano')">Calcular con ECAP</button>
             <!-- <button onclick="calcularEnDolaresPremiumLlaveEnMano()">Calcular en Dólares (Premium Llave en Mano)</button> -->
             <button class="borrar" onclick="borrarCampos('premiumllave')">Borrar Campos</button>
         </div>
     </div>
     <div class="divisores">
-
-
         <h3>Duplex Obra Gris</h3>
         <div class="entradas" id="duplex">
-
-
             <label for="cubiertoDuplex">m² Cubierto:</label>
             <input type="number" id="cubiertoDuplex" />
-
             <label for="pergolaDuplex">m² Pérgola:</label>
             <input type="number" id="pergolaDuplex" />
-
             <label for="galeriaDuplex">m² Galería:</label>
             <input type="number" id="galeriaDuplex" />
         </div>
         <!-- Botones para premium base -->
         <div class="botones">
             <button onclick="calcularDuplex()">Calcular Duplex Obra Gris</button>
+            <button onclick="calcularConECAP('Duplex')">Calcular con ECAP</button>
             <!-- <button onclick="calcularEnDolaresDuplex()">Calcular en Dólares (Duplex Obra Gris)</button> -->
             <button class="borrar" onclick="borrarCampos('duplex')">Borrar Campos</button>
-
         </div>
     </div>
     <div class="divisores">
-
-
         <!-- Campos para premium llave en mano -->
         <h3>Duplex LLave en mano</h3>
         <div class="entradas" id="duplexllave">
-
             <label for="cubiertoDuplexLlaveEnMano">m² Cubierto:</label>
             <input type="number" id="cubiertoDuplexLlaveEnMano" />
-
             <label for="pergolaDuplexLlaveEnMano">m² Pérgola:</label>
             <input type="number" id="pergolaDuplexLlaveEnMano" />
-
             <label for="galeriaDuplexLlaveEnMano">m² Galería:</label>
             <input type="number" id="galeriaDuplexLlaveEnMano" />
         </div>
         <div class="botones">
             <!-- Botones para premium llave en mano -->
             <button onclick="calcularDuplexLlaveEnMano()">Calcular Duplex Llave en Mano</button>
+            <button onclick="calcularConECAP('DuplexLlaveEnMano')">Calcular con ECAP</button>
             <!-- <button onclick="calcularEnDolaresDuplexLlaveEnMano()">Calcular en Dólares (Duplex Llave en Mano)</button> -->
             <button class="borrar" onclick="borrarCampos('duplexllave')">Borrar Campos</button>
-
         </div>
     </div>
 
@@ -141,7 +131,7 @@
         <button onclick="cerrarPopup()">Cerrar</button>
     </div>
 
-    <script src="calculadora.js"> </script>
+    <script src="calculadora.js"></script>
 </body>
 
 </html>
