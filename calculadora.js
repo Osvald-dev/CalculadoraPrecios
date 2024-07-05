@@ -66,35 +66,54 @@ function calcularConECAP(tipo) {
   var galeria = parseFloat(document.getElementById("galeria" + tipo).value) || 0;
 
   var precioCubierto;
-  var precioPergola = pergola * 100000;
-  var precioGaleria = galeria * 184800;
+  var precioPergola;
+  var precioGaleria;
 
+  // Asignación de precios por tipo de construcción
   switch(tipo) {
       case 'ObraGris':
           precioCubierto = cubierto * 254100;
+          precioPergola = pergola * 100000;
+          precioGaleria = galeria * 184800;
           break;
       case 'ObraGrisLlaveEnMano':
           precioCubierto = cubierto * 429000;
+          precioPergola = pergola * 181500;
+          precioGaleria = galeria * 300300;
           break;
       case 'PremiumBase':
           precioCubierto = cubierto * 308000;
+          precioPergola = pergola * 100000;
+          precioGaleria = galeria * 184800;
           break;
       case 'PremiumLlaveEnMano':
           precioCubierto = cubierto * 506000;
+          precioPergola = pergola * 181500;
+          precioGaleria = galeria * 300300;
           break;
       case 'Duplex':
           precioCubierto = cubierto * 308000;
+          precioPergola = pergola * 100000;
+          precioGaleria = galeria * 184800;
           break;
       case 'DuplexLlaveEnMano':
           precioCubierto = cubierto * 550000;
+          precioPergola = pergola * 181500;
+          precioGaleria = galeria * 300300;
           break;
       default:
           precioCubierto = 0;
+          precioPergola = 0;
+          precioGaleria = 0;
   }
 
-  var sumaECAP = cubierto * 50000;
-  var resultado = precioCubierto + sumaECAP + precioPergola + precioGaleria;
+  // Cálculo del ECAP adicional
+  var sumaECAP = cubierto * 50000; // ECAP solo se aplica a los metros cubiertos
 
+  // Cálculo total con ECAP
+  var resultado = precioCubierto + precioPergola + precioGaleria + sumaECAP;
+
+  // Mostrar el resultado
   mostrarResultado(resultado);
 }
 
