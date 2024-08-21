@@ -44,7 +44,7 @@ function calcularDuplex() {
   var pergola = parseFloat(document.getElementById("pergolaDuplex").value) || 0;
   var galeria = parseFloat(document.getElementById("galeriaDuplex").value) || 0;
 
-  var resultado = cubierto * 308000 * 1.05 + pergola * 100000 * 1.05 + galeria * 184800 * 1.05;
+  var resultado = cubierto * 400000  + pergola * 100000 * 1.05 + galeria * 184800 * 1.05;
 
   mostrarResultado(resultado);
 }
@@ -54,7 +54,7 @@ function calcularDuplexLlaveEnMano() {
   var pergola = parseFloat(document.getElementById("pergolaDuplexLlaveEnMano").value) || 0;
   var galeria = parseFloat(document.getElementById("galeriaDuplexLlaveEnMano").value) || 0;
 
-  var resultado = cubierto * 550000 * 1.05 + pergola * 181500 * 1.05 + galeria * 300300 * 1.05;
+  var resultado = cubierto * 650000  + pergola * 181500 * 1.05 + galeria * 300300 * 1.05;
 
   mostrarResultado(resultado);
 }
@@ -92,12 +92,12 @@ function calcularConECAP(tipo) {
           precioGaleria = galeria * 300300 * 1.05;
           break;
       case 'Duplex':
-          precioCubierto = cubierto * 308000 * 1.05;
+          precioCubierto = cubierto * 400000 ;
           precioPergola = pergola * 100000 * 1.05;
           precioGaleria = galeria * 184800 * 1.05;
           break;
       case 'DuplexLlaveEnMano':
-          precioCubierto = cubierto * 550000 * 1.05;
+          precioCubierto = cubierto * 650000;
           precioPergola = pergola * 181500 * 1.05;
           precioGaleria = galeria * 300300 * 1.05;
           break;
